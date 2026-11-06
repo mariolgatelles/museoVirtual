@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nariolys Telles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top">
+      <span>Pintura · Exposición permanente</span>
+      <span class="sample-tag">Prototipo con obras de ejemplo</span>
+    </div>
+    <div class="hero">
+      <h1>Nariolys<br><em>Telles</em></h1>
+      <div class="hero-meta">
+        <p>Hola Nariolys, mi familia me dice Nari o Narita. Tengo 25 años y pinto lo que siento y lo que veo en las personas: emociones hechas color. <strong>Estoy muy emocionada de que veas mi arte.</strong></p>
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filtrar por serie"></nav>
+
+  <main class="wall" id="wall"></main>
+
+  <footer class="foot">
+    <span>Instagram · @nariolystelles</span>
+    <span>© 2026 Nariolys Telles</span>
+  </footer>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Obra ampliada" hidden>
+  <button class="close" id="lbClose" type="button">Cerrar</button>
+  <div class="lb-art" id="lbArt"></div>
+  <div class="lb-info">
+    <div class="no" id="lbNo"></div>
+    <h3 id="lbTitle"></h3>
+    <div class="spec" id="lbSpec"></div>
+  </div>
+  <div class="lb-nav">
+    <button id="lbPrev" type="button">← Anterior</button>
+    <button id="lbNext" type="button">Siguiente →</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
